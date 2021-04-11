@@ -13,7 +13,7 @@ const Checkout = () => {
 
         const newOder = { ...selectProduct, ...loginUser, time }
         console.log(newOder);
-        const url = `http://localhost:5000/addOderProduct`;
+        const url = `https://salty-chamber-97064.herokuapp.com/addOderProduct`;
         fetch(url, {
             method: 'POST',
             headers: { 'content-type': 'application/json' },

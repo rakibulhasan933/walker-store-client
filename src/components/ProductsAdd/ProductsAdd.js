@@ -12,7 +12,7 @@ const ProductsAdd = () => {
             quantity: data.quantity,
             imageURL: imageURL
         };
-        const url = `http://localhost:5000/addProduct`;
+        const url = `https://salty-chamber-97064.herokuapp.com/addProduct`;
         console.log(eventData);
 
         fetch(url, {

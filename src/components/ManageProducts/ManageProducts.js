@@ -4,7 +4,7 @@ import React from 'react';
 const ManageProducts = (props) => {
     const products = props.itemProducts;
     const deletedProduct = (id) => {
-        fetch(`http://localhost:5000/delete/${id}`, {
+        fetch(`https://salty-chamber-97064.herokuapp.com/delete/${id}`, {
             method: 'DELETE'
         })
             .then(res => res.json())

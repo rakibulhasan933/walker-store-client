@@ -5,7 +5,7 @@ const Orders = () => {
     const [user, setUser] = useState([]);
     const [loginUser, setLoginUser] = useContext(UserContext);
     useEffect(() => {
-        fetch('http://localhost:5000/userOder?email=' + loginUser.email)
+        fetch('https://salty-chamber-97064.herokuapp.com/userOder?email=' + loginUser.email)
             .then(res => res.json())
             .then(data => {
                 setUser(data)

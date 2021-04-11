@@ -10,7 +10,7 @@ const Product = ({ product }) => {
 
     // let history = useHistory();
     function handleClick(id) {
-        fetch(`http://localhost:5000/product/${id}`)
+        fetch(`https://salty-chamber-97064.herokuapp.com/product/${id}`)
             .then(res => res.json())
             .then(data => {
                 setSelectProduct(data);
